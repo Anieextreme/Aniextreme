@@ -1,43 +1,49 @@
 * {
-    font-family: "Calibri", "sans-serif";
-
-
+    font-family: "Calibri", "sans-serif";           /*Die Schriftart*/
 }
+
 
 
 h1 {
-    margin-top: 0;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-top: 0;                                  /*Der Abstand des textes nach oben*/
+    margin-left: 1%;                                /*Der Abstand des textes auf die Linke Seite*/
+    margin-right: 1%;                               /*Der Abstand des textes auf die Rechte Seite*/
+    margin-bottom: 0;                               /*Der Abstand des textes nach unten*/
+    color: #8800ff;                               /*Die Text Farbe*/
+    text-align: center;                             /*Die Text Position*/
 }
 
-ul {
-    margin-bottom: 0;
-}
 
-h1, h2, h4 {
-    background: #000000;
-    color: #8800ff;
-    text-align: center;
+h2 {
+    background: #000000;                         /*Hintergundfarbe des Textes*/
+    color: #8800ff;                              /*Text Farbe*/
+    text-align: center;                            /*Text Position*/
     padding: 1%;
-    box-shadow: 1px 1px 5px #ff00bf;
-    border-radius: 20px/50%;
+    box-shadow: 1px 1px 5px #ff00bf;             /*Box Schatten größe und Farbe*/
+    border-radius: 20px/50%;                       /*Box Abrundung*/
 }
+
+h2 {
+    margin: 0%;
+}
+
+.AnimesStreamen {                               /*Der Text Animes in 1080p Qualität Streamen*/
+    text-align: center;                         /*Wo der Text Sitzt*/
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0px/0px;
+}
+
 
 .Copyright{
-    color: #ffffff;
+    color: #ffffff;                          /*Die Farbe des Copyright Textes*/
+    margin-top: 10%;
 }
-
-.Img {
-    margin: auto;
-    display: block;
-}
-
 
 a:link, a:visited {
-    text-decoration: none;
+    text-decoration: none;                     /*Bewirkt das Links nicht unterstrichen sind*/
 }
-
 
 @media (min-width: 0px) {
 
@@ -58,3 +64,121 @@ a:link, a:visited {
         background: linear-gradient(#3d3d3d, #000000);
     }
 }
+
+
+
+
+
+
+/*Ab hier nur die Slideshow*/
+
+.KompleteSlideshow {
+    display: flex;                                      /*Wo die Box sitzt*/
+    justify-content: center;                            /*Wo die Box sitzt*/
+    align-items: center;                                /*Wo die Box sitzt*/
+    height: 60vh;                                       /* Die Größe um die Box der Bilder die Box selbst muss mit einberechnet werden z.B. Die Box ist 50vh und die height nur 10 dann würde sich der Text hinter Die Box Schieben*/
+    margin: 0;
+}
+
+
+.slideshow {
+    background-color: black;
+    width: 50vw;                                        /*width und height sind die größe der Slideshow*/
+    height: 50vh;
+    box-shadow: 0px 0px 10px #808080;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.slide-bild {
+    width: 100%;
+}
+
+.slide-textbereich {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 0 15% 0 15%;
+
+}
+
+.slide-ueberschrift {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.slide-beschreibung {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.pfeil {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    color: rgba(255, 255, 255, 0.5);
+    user-select: none;
+    cursor: pointer;
+}
+
+.pfeil:hover {
+    color: #000000;
+}
+
+.pfeil-links {
+    left: 0;
+}
+
+.pfeil-rechts {
+    right: 0;
+}
+
+.indikatorenliste {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    list-style-type: none;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.indikator {
+    padding: 0 10px;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0.5;                    /*deckkraft eines Ellements*/
+    transition: opacity 2s;
+}
+
+.aktiv {
+    opacity: 1;
+}
+
+

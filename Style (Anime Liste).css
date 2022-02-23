@@ -1,0 +1,79 @@
+* {
+    font-family: "Calibri", "sans-serif";           /*Die Schriftart*/
+}
+
+
+h1 {
+    margin-top: 0;                                  /*Der Abstand des textes nach oben*/
+    margin-left: 1%;                                /*Der Abstand des textes auf die Linke Seite*/
+    margin-right: 1%;                               /*Der Abstand des textes auf die Rechte Seite*/
+    margin-bottom: 0;                               /*Der Abstand des textes nach unten*/
+    color: #9722fd;                               /*Die Text Farbe*/
+    text-align: center;                             /*Die Text Position*/
+}
+
+h4 {
+    margin-top: 0;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 0;
+
+    color: #ffffff;
+    text-align: center;
+}
+
+.Copyright{
+    color: #ffffff;                          /*Die Farbe des Copyright Textes*/
+    margin-top: 10%;
+}
+
+
+.ÜberschriftBuchstabe {
+    font-size: 25pt;
+
+}
+
+.Buchstabe {
+    text-align: left;
+}
+
+th {
+    color: #ffffff;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+
+.tabellenbehaelter {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+table {
+    width: 45%;
+    margin: 0;
+}
+
+
+a:link, a:visited {
+    text-decoration: none;                     /*Bewirkt das Links nicht unterstrichen sind*/
+}
+
+
+
+
+
+
+@media (min-width: 576px) {
+    body {
+        background: linear-gradient(#3d3d3d, #000000);
+    }
+
+}
+
+@media (min-width: 1200px) {
+    body {
+        background: linear-gradient(#3d3d3d, #000000);
+    }
+}

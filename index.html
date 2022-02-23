@@ -9,21 +9,58 @@
 </head>
 <body>
     <div>
+        <img src="Startseite/Bilder/Aniextreme Profil Bild.png" alt="Aniextreme Profil Bild">
         <h1>
             Aniextreme
         </h1>
+        <h2 class="AnimesStreamen">
+            Animes Streamen in 1080p Qualität
+        </h2>
+        <section class="KompleteSlideshow">
+            <div class="slideshow">
+                <div class="slide">
+                   <img src="Startseite/Slideshow/Bilder/Another Staffel 1.jpg" alt="Another Staffel 1" class="slide-bild">
+                    <div class="slide-textbereich">
+                        <h3 class="slide-ueberschrift">Another</h3>
+                        <p class="slide-beschreibung">Another Staffel 1 Streamen</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="Startseite/Slideshow/Bilder/Girl's Frontline Staffel 1.jpg" alt="Girl's Frontline Staffel 1" class="slide-bild">
+                    <div class="slide-textbereich">
+                        <h3 class="slide-ueberschrift">Girl's Frontline</h3>
+                        <p class="slide-beschreibung">Girl's Frontline Staffel 1 Streamen</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="Startseite/Slideshow/Bilder/Attack on Titan Final Season.webp" alt="Attack on Titan Final Season" class="slide-bild">
+                    <div class="slide-textbereich">
+                        <h3 class="slide-ueberschrift">Attack on Titan</h3>
+                        <p class="slide-beschreibung">Attack on Titan Final Season Streamen</p>
+                    </div>
+                </div>
+                    <a class="pfeil pfeil-links" onclick="umschalten(-1)"><span>&#10094;</span></a>
+                    <a class="pfeil pfeil-rechts" onclick="umschalten(1)"><span>&#10095;</span></a>
+                    <ol class="indikatorenliste">
+                            <li class="indikator" onclick="springeZuEintrag(0)" >&#8226;</li>
+                            <li class="indikator" onclick="springeZuEintrag(1)">&#8226;</li>
+                            <li class="indikator" onclick="springeZuEintrag(2)">&#8226;</li>
+                    </ol>
+            </div>
+            <script src="Startseite/Slideshow/slideshow.js"></script>
+        </section>
         <section>
-            <img src="Startseite/Bilder/Aniextreme.png" alt="">
             <h2>
-                Unsere Animes:
+               <a href="Anime Liste.html" style="color: #8800ff;" >Hier geht es zu Unseren Animes &gtrdot;</a>
             </h2>
-            <h4>
-                <a href="Animes/Another/Another.html" style="color:#ffffff;">Another</a>
-            </h4>
         </section>
     </div>
-
-    <p class="Copyright"> &copy Aniextreme Designed by Teknikator</p>
-
 </body>
+
+<footer>
+    <section class="Copyright">
+        <p class="Copyright"> &copy 2022 Aniextreme Designed by Teknikator</p>
+    </section>
+</footer>
+
 </html>
