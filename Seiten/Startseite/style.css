@@ -1,0 +1,95 @@
+* {
+    font-family: "Calibri", "sans-serif";           /*Die Schriftart*/
+}
+
+body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    margin-top: 8%;                                 /*Der Abstand des textes nach oben*/
+    margin-left: 1%;                                /*Der Abstand des textes auf die Linke Seite*/
+    margin-right: 1%;                               /*Der Abstand des textes auf die Rechte Seite*/
+    margin-bottom: 5%;                               /*Der Abstand des textes nach unten*/
+    color: #8800ff;                               /*Die Text Farbe*/
+    text-align: center;                             /*Die Text Position*/
+}
+
+
+h2 {
+    background: #000000;                         /*Hintergundfarbe des Textes*/
+    color: #8800ff;                              /*Text Farbe*/
+    text-align: center;                            /*Text Position*/
+    padding: 1%;
+    box-shadow: 1px 1px 5px #ff00bf;             /*Box Schatten größe und Farbe*/
+    border-radius: 20px/50%;                       /*Box Abrundung*/
+}
+
+h2 {
+    margin-top: 5%;
+}
+
+
+.ZudenAnimes {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.AnimesStreamen {                               /*Der Text Animes in 1080p Qualität Streamen*/
+    text-align: center;                         /*Wo der Text Sitzt*/
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 0px/0px;
+}
+
+.Logobild {
+    display: block;
+    margin: 0px 0px 0px -8px;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        background: linear-gradient(#3d3d3d, #000000);
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        background: linear-gradient(#3d3d3d, #000000);
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background: linear-gradient(#3d3d3d, #000000);
+    }
+}
+
+
+
+
+
+/*Ab hier nur Footer*/
+
+footer {
+    color: #ffffff;
+}
+.copy-footer {
+    color: #ffffff;
+    margin-top: 55px;
+}
+
+.tabelle {
+    display: flex;
+    justify-content: space-around;
+}
+.tabelle a {
+    text-decoration: none;
+    color: #bbb;
+}
+

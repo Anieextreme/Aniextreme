@@ -5,62 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniextreme</title>
-    <link rel="stylesheet" href="Startseite/style.css">
-</head>
+    <link rel="stylesheet" href="Seiten/Startseite/style.css">
+    <link rel="icon" type="image/png" href="Seiten/Bilder/Aniextreme Icon.png">
+    <link rel="stylesheet" href="Seiten/Navigation/Fontawesome/css/all.css">
+    <link rel="stylesheet" href="Seiten/Navigation/Navigationsleiste.css">
+    <script src="Seiten/Navigation/Navigationsleiste.js" defer></script>
 <body>
-    <div>
-        <img src="Startseite/Bilder/Aniextreme Profil Bild.png" alt="Aniextreme Profil Bild">
-        <h1>
-            Aniextreme
-        </h1>
+    <header>                                 <!--Navigationsleiste-->
+        <div id="hauptnavigation">              
+            <div class="logobereich">
+                <a href="index.html" class="nav-logo"></a>          <!--Wenn man auf das Logo Klickt wird man auf die Startseite geleitet-->
+            </div>
+            <div class="navigationsbereich">
+                <div class="nav-oben">
+                    <a href="Seiten/Kontakt.html" class="nav-link">
+                        <i class="fas fa-envelope nav-icon"></i>
+                        Kontakt
+                    </a>
+                    <div class="nav-socials">
+                        <a href="https://discord.gg/TGxY7UruBa" class="nav-link"> <i class="fab fa-discord nav-icon"></i></a>
+                    </div>
+                </div>
+                <div class="nav-unten">
+                    <div class="navigationspunkte">
+                        <a href="" class="nav-punkt nav-link aktiv">Startseite</a>                  <!--aktiv wird dazu genutzt das die Farbe der geraden Besuchten seite in der Naigationsleiste Verändert wird-->
+                        <a href="Seiten/Anime Liste.html" class="nav-punkt nav-link">Animes</a>
+                        <a href="" class="nav-punkt nav-link">Bilder</a>
+                        <a href="Seiten/Kontakt.html" class="nav-punkt nav-link">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="hamburger-icon" onclick="navigationUmschalten()">          <!--Damit solche drei Balken für die Navigationsleite Angezeigt werden-->
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <div id="hauptbehaelter">
+        <div  class="Logobild">
+            <img src="Seiten/Startseite/Bilder/Webi Bild.png"alt="Logo Bild">
+        </div>
         <h2 class="AnimesStreamen">
             Animes Streamen in 1080p Qualität
         </h2>
-        <section class="KompleteSlideshow">
-            <div class="slideshow">
-                <div class="slide">
-                   <img src="Startseite/Slideshow/Bilder/Another Staffel 1.jpg" alt="Another Staffel 1" class="slide-bild">
-                    <div class="slide-textbereich">
-                        <h3 class="slide-ueberschrift">Another</h3>
-                        <p class="slide-beschreibung">Another Staffel 1 Streamen</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="Startseite/Slideshow/Bilder/Girl's Frontline Staffel 1.jpg" alt="Girl's Frontline Staffel 1" class="slide-bild">
-                    <div class="slide-textbereich">
-                        <h3 class="slide-ueberschrift">Girl's Frontline</h3>
-                        <p class="slide-beschreibung">Girl's Frontline Staffel 1 Streamen</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="Startseite/Slideshow/Bilder/Attack on Titan Final Season.webp" alt="Attack on Titan Final Season" class="slide-bild">
-                    <div class="slide-textbereich">
-                        <h3 class="slide-ueberschrift">Attack on Titan</h3>
-                        <p class="slide-beschreibung">Attack on Titan Final Season Streamen</p>
-                    </div>
-                </div>
-                    <a class="pfeil pfeil-links" onclick="umschalten(-1)"><span>&#10094;</span></a>
-                    <a class="pfeil pfeil-rechts" onclick="umschalten(1)"><span>&#10095;</span></a>
-                    <ol class="indikatorenliste">
-                            <li class="indikator" onclick="springeZuEintrag(0)" >&#8226;</li>
-                            <li class="indikator" onclick="springeZuEintrag(1)">&#8226;</li>
-                            <li class="indikator" onclick="springeZuEintrag(2)">&#8226;</li>
-                    </ol>
-            </div>
-            <script src="Startseite/Slideshow/slideshow.js"></script>
-        </section>
-        <section>
+
+        <section class="ZudenAnimes">
             <h2>
-               <a href="Anime Liste.html" style="color: #8800ff;" >Hier geht es zu Unseren Animes &gtrdot;</a>
+               <a href="Seiten/Anime Liste.html" style="color: #8800ff;" >Hier geht es zu Unseren Animes &gtrdot;</a>
             </h2>
         </section>
     </div>
 </body>
 
-<footer>
-    <section class="Copyright">
-        <p class="Copyright"> &copy 2022 Aniextreme Designed by Teknikator</p>
-    </section>
+<footer class="footer">
+    <div class="tabelle">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <h4 class="Buchstabe">Über Uns</h4>
+                    </th>
+                    </tr>
+            </thead>
+            <tbody>
+                <th>
+                    <a href="Seiten/DMCA.html">DMCA</a>
+                </th>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <h4 class="Buchstabe">Animes</h4>
+                    </th>
+                    </tr>
+            </thead>
+            <tbody>
+                <th>
+                    <a href="Seiten/Anime Liste.html">Alle</a>
+                </th>
+            </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <h4 class="Buchstabe">Folgt Uns!</h4>
+                    </th>
+                    </tr>
+            </thead>
+            <tbody>
+                <th>
+                    <a href="https://discord.gg/TGxY7UruBa" class="nav-link"><i class="fab fa-discord nav-icon"></i></a>
+                </th>
+            </tr>
+            </tbody>
+        </table>
+    
+    </div>
+
+    <div class="copy-footer">
+        <p>&copy Copyright 2022. Aniextreme Designed by Teknikator</p>
+    </div>
+
 </footer>
 
 </html>

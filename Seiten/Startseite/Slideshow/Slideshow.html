@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+</head>
+<body>
+    <section class="KompleteSlideshow">
+        <div class="slideshow">
+            <div class="slide">
+               <img src="Seiten/Startseite/Slideshow/Bilder/Another Staffel 1.jpg" alt="Another Staffel 1" class="slide-bild">
+                <div class="slide-textbereich">
+                    <h3 class="slide-ueberschrift">Another</h3>
+                    <p class="slide-beschreibung">Another Staffel 1 Streamen</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Seiten/Startseite/Slideshow/Bilder/Girl's Frontline Staffel 1.jpg" alt="Girl's Frontline Staffel 1" class="slide-bild">
+                <div class="slide-textbereich">
+                    <h3 class="slide-ueberschrift">Girl's Frontline</h3>
+                    <p class="slide-beschreibung">Girl's Frontline Staffel 1 Streamen</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="Seiten/Startseite/Slideshow/Bilder/Attack on Titan Final Season.webp" alt="Attack on Titan Final Season" class="slide-bild">
+                <div class="slide-textbereich">
+                    <h3 class="slide-ueberschrift">Attack on Titan</h3>
+                    <p class="slide-beschreibung">Attack on Titan Final Season Streamen</p>
+                </div>
+            </div>
+                <a class="pfeil pfeil-links" onclick="umschalten(-1)"><span>&#10094;</span></a>
+                <a class="pfeil pfeil-rechts" onclick="umschalten(1)"><span>&#10095;</span></a>
+                <ol class="indikatorenliste">
+                        <li class="indikator" onclick="springeZuEintrag(0)" >&#8226;</li>
+                        <li class="indikator" onclick="springeZuEintrag(1)">&#8226;</li>
+                        <li class="indikator" onclick="springeZuEintrag(2)">&#8226;</li>
+                </ol>
+        </div>
+        <script src="Seiten/Startseite/Slideshow/slideshow.js"></script>
+    </section>
+</body>
+</html>

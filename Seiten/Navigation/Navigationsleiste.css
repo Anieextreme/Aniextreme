@@ -1,0 +1,156 @@
+header{                                 /*Position der Navighationsleiste*/
+    position: relative;
+}
+
+#hauptnavigation {                              
+    position: fixed;                        
+    left: 0;                                        /*Damit es Komplett oben aliegt left 0, top 0, right 0*/
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to right, #66004d, #310000);              /*Die Farbe der Navigationsleitste in demfall ein Farbverlauf*/
+    display: flex;                                      /*Damit Logo und Navigation nebeneinander Angeordnet werden*/
+}
+
+.logobereich {                                  
+    width: 24%;
+    display: flex;                      /*Damit das Logo Positioniert werden kann*/
+    justify-content: center;            /*Horizontal Zentrieren*/
+    align-items: center;                /*Vertikal Zentrieren*/
+}
+
+.nav-logo {
+    background-image: url(Bilder/Aniextremelogo.png);
+    background-size: contain;                               /*Damit immer das ganze Logo zu sehen ist*/
+    background-repeat: no-repeat;                           /*Damit das Logo nicht wiederholt wird*/
+    background-position: center;                            /*Damit der Hintergrund mittig ist in dem fall das Logo*/
+    width: 150px;                                           /*Die Größe das Logos*/
+    height: 84px;
+}
+
+.navigationsbereich {                                       
+    width: 76%;                                             /*Damit der Ganze Platz in der Leiste eingenommen wird*/
+    display: flex;
+    flex-direction: column;                                 /*Damit wird der Inhalt untereinander Angeornet*/
+}
+
+.nav-oben {
+    display: flex;                                          
+    justify-content: space-between;                         /*Damit in dem fall die Mail rechts und die Icons Links angeordnet werden*/
+    align-items: center;                                    /*Damit die sachen Mittig sind*/
+    width: 100%;                                            /*Damit die Ganze Fläche eingenommen wird*/
+    padding-right: 26vw;                                    /*Damit man einen gewissen Abstand zur rechten seite hat*/
+    padding-left: 2%;                                       /*Damit der Inhalt noch Mittiger ist*/
+    box-sizing: border-box;                                 /*Damit das Padding nur in die Verfügbaren 100% einberrechnt wird*/
+}
+
+.nav-oben a{
+    color: #ffffff;                                       /*Damit die a Tags die Farbe ändern*/
+}
+
+.nav-link {
+    font-size: 1.2em;                                       /*Die Schriftgröße*/
+    text-decoration: none;                                  /*Damit die Links nicht Unterstrichen werden*/
+    text-align: center;                                     /*Damit die Schrift Zentriert ist*/
+    padding: 14px 16px;                                     /*Damit Zwischen den Schriften mehr Platr ist*/
+}
+
+
+.nav-unten {
+    display: flex;                                          /*Damit der Inhalt nebeneinander Angeordnet wird*/
+    width: 100%;                                            /*Damit sich der Text über den ganzen verfügbaren berreich erstreckt*/
+    height: 100%;                                           /*Damit sich der Text über den ganzen verfügbaren berreich erstreckt*/
+    background-color: #ffffff;
+    clip-path: polygon(2% 0%, 100% 0%, 100% 100%, 0% 100%);     /*Damit der Linke Rand Abgeschrägt ist*/
+    padding-left: 2%;                                           /*Damit Der Text durch die Schräge nicht abgeschnitten wird*/
+}
+
+.navigationspunkte {
+    display: flex;                                          
+    justify-content: center;                                /*Horizontal Zentrieren*/
+    align-items: center;                                    /*Vertikal Zentrieren*/
+    width: 50vw;                                            /*Damit in dem fall das such element mehr Platz hat und sich besser anordnet*/
+}
+
+.nav-punkt {
+    color: black;                                         /*Damit die Schrift der Navigationspunkte Schwarz ist*/
+}
+
+
+.nav-punkt:hover {
+    background-color: rgba(0, 0, 0, 0.2);                 /*Damit es beim Darüberfahren hervorgehoben wird*/
+}
+
+.nav-punkt.aktiv {
+    font-weight: bolder;                                    /*Damit die Schrift Dicker ist*/
+    color: #00ff15;                                       /*Die Farbe der Aktuellen seite (Text)*/
+}
+
+
+.fa-discord {
+    color: #00aeff;                                        /*Farbe des Discord Icons*/
+}                                                            /*Mit dem Code: font-size: 1.2em; könnte man die größe des Icons Ändern (mögl. muss man .nav-icon machen und dann den Befehl: font-size: 1.2em;*/
+
+.hamburger-icon {
+    display: none;                                          /*Damit das Dreibalken Icon nicht auf großen Bildschirmen Angezeigt wird*/
+}
+
+@media (max-width: 600px)  {                                 /*Nur für Handy*/
+    
+    body {
+        padding-top: 10px;                                   /*Damit mehr Abstand zum Logo vom Text ist*/
+    }
+    
+    #hauptnavigation {
+        flex-direction: column;                              /*Um Inhalt Untereinander Anzuordnen*/
+        height: 50px;
+    }
+
+    .nav-logo {
+        width: 75px;                                        /*Damit das Logo auf Handys Kleiner ist*/
+        height: 42px;
+    }
+
+    #hauptnavigation div{
+        width: 100%;                                        /*Damit die Gesamte Breite eingenommen wird*/
+    }
+
+    .navigationsbereich {
+        display: none;                                      /*Damit nur noch das Logo Angezeigt wird und sonst nichts*/
+    }
+
+    .nav-oben {
+        display: none;                                      /*Damit nur noch das Logo Angezeigt wird und sonst nichts*/
+    }
+
+    .nav-unten {
+        display: none;                                      /*Damit nur noch das Logo Angezeigt wird und sonst nichts*/
+    }
+
+    .hamburger-icon {
+        display: block;                                     /*Damit das Icon auf Schmalen Displays wieder sichtbar wird*/
+        position: absolute;                                 /*Absolute Position*/
+        top: 3px;                                           /*Die Entfernenung von oben*/
+        right: 12px;                                        /*Die Entfernenung von rtechts*/
+        font-size: 30px;                                    /*Die größe des Icons*/
+        color: #ff0000;                                   /*Die Farbe des Icons*/
+        user-select: none;                                  /*Damit man das Schriftzeichen nicht auswählt*/
+    }
+
+    .navigation-geoffnet .navigationsbereich{               /*Für den Navigations Bereich innerhalb der navigation-geoffnet Klasse (diese Klasse wird von einem Javascript erstellt)*/
+        display: flex;                                      /*Damit Navigationsbereich wieder sichtbar wird*/
+        padding-top: 10px;                                  /*Einbisschen Platz zwischen Inhalt und Logo Bereich*/
+    }
+
+    .navigation-geoffnet .nav-unten {
+        display: flex;                                      /*Damit es wieder sichtbar wird*/
+        flex-direction: column-reverse;                     /*Damit die Suchleiste Komplett nach oben gebracht wird*/
+        border-bottom: 1px solid #808080;                 /*Grauer Rahmen um ihn von der Seite Abzuheben*/
+        clip-path: none;
+    }
+
+    .navigation-geoffnet .navigationspunkte {
+        display: flex;                                      /*Verwandeln in Behälter*/
+        flex-direction: column;                             /*Um die Punkte Untereinander zu Positionieren*/
+        align-items: flex-start;                            /*Damit die Ellemente Linksbündig angeornet werden*/
+    }
+}

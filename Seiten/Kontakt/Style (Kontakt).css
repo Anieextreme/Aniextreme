@@ -1,0 +1,43 @@
+* {
+    font-family: "Calibri", "sans-serif";           /*Die Schriftart*/
+}
+
+h1 {
+    margin-top: 15%;                                  /*Der Abstand des textes nach oben*/
+    margin-left: 1%;                                /*Der Abstand des textes auf die Linke Seite*/
+    margin-right: 1%;                               /*Der Abstand des textes auf die Rechte Seite*/
+    margin-bottom: 40%;                               /*Der Abstand des textes nach unten*/
+    color: #8800ff;                               /*Die Text Farbe*/
+    text-align: center;                             /*Die Text Position*/
+}
+
+.Copyright{
+    color: #ffffff;                          /*Die Farbe des Copyright Textes*/
+    margin-top: 10%;
+}
+
+@media (min-width: 1200px) {
+    body {
+        background: linear-gradient(#3d3d3d, #000000);
+    }
+}
+
+
+/*Ab hier nur Footer*/
+
+footer {
+    color: #ffffff;
+}
+.copy-footer {
+    color: #ffffff;
+    margin-top: 55px;
+}
+
+.tabelle {
+    display: flex;
+    justify-content: space-around;
+}
+.tabelle a {
+    text-decoration: none;
+    color: #bbb;
+}
